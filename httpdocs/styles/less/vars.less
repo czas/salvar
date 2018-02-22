@@ -1,0 +1,36 @@
+
+// Altura header
+@header-height: 100px;
+
+// Color Texto
+@salvar-text-w: #ffffff;
+@salvar-text-b: #000000;
+
+// Colores SALVAR
+@salvar-red: #d83435;
+@salvar-red-hover: (@salvar-red + #111111);
+
+@salvar-orange: #e67323;
+@salvar-orange-hover: (@salvar-orange + #111111);
+
+// Color Background
+@salvar-bg-1: #ffffff;
+@salvar-bg-2:	#dcdcdc;
+@salvar-bg-3: #1a1a1a;
+@salvar-bg-4: #000000;
+
+
+// Pogramacion para uso común
+.row-eq-height{
+  .flex-display(flex);
+  .flex-wrap(wrap);
+
+  .row > [class*='col-']{
+    .flex-display(flex);
+    .flex-direction(column);
+  }
+}
+
+label.error{
+  color: @salvar-red;
+}

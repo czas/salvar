@@ -1,0 +1,21 @@
+/*************************************************************************************************
+ *    EN DESARROLLO:                                                                             *
+ *      1# Colocarmos en index.html el archivo .less                                             *
+ *              <link rel="stylesheet/less" type="text/css" href="styles/less/allStyles.less">   *
+ *      2# Colocamos las opciones de un objeto Less                                              *
+ *              <script type="text/javascript" src="/styles/less/js/optionsLess.js"></script>    *
+ *      2# Colocamos después el archivo .js que nos ayuda a compilar en cliente el .less         *
+ *              <script type="text/javascript" src="/styles/less/js/less.js"></script>           *
+ *      3# Compilación automática                                                                *
+ *                                                                                               *
+ *    EN PRODUCCIÓN:                                                                             *
+ *      1# Primero instalamos node.js:                                                           *
+ *              $ sudo apt-get install node-less                                                 *
+ *      2# Si queremos compilar, vemos el resultado por terminal (sin producir archivo .css):    *
+ *              $ lessc primary.less                                                             *
+ *      3# Cuando queramos compilar el .less -> .css:                                            *
+ *        3.1# Nos situamos en la carpeta dónde se encuentra el .less                            *
+ *              $  /home/proxectos/salvar/httpdocs/styles/less                                   *
+ *        3.2# Compilamos:                                                                       *
+ *              $ lessc allStyles.less ../css/allStyles.less.css                                 *
+ *************************************************************************************************/

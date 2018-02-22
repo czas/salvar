@@ -1,0 +1,83 @@
+
+.bodyContent{
+  .pageHome{
+    margin-bottom: 20px;
+
+    .noticias{
+      .tituloNoticia{
+        a{
+          text-decoration: none;
+          color: @salvar-red;
+          &:hover{ color: @salvar-orange-hover; }
+        }
+      }//.tituloNoticia
+
+      img{ padding: 15px 5px; }
+    }//.noticias
+
+    .jornadas{
+      .filesPdf{
+        padding-left: 10px;
+        li{
+          list-style: none;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid @salvar-bg-2;
+
+          a{
+            text-decoration: none;
+            color: @salvar-orange;
+            &:hover{ color: @salvar-orange-hover; }
+          }
+          i{
+            color: @salvar-text-b;
+            margin-right: 5px;
+          }
+          &:last-child{ border-bottom: none; }
+        }
+      }//.filesPdf
+    }//.jornadas
+  }//.pageHome
+
+  .sobreNosotros{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    .mapaSituacion{
+      position: relative;
+      padding-bottom: 30%;
+      overflow: hidden;
+
+      iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }//.mapaSituacion
+
+    & > .row > div:first-child{ margin-bottom: 50px; }
+  }//.sobreNosotros
+}//.bodyContent
+
+/**************************************************************************************/
+/**********************  RESPONSIVE MEDIA QUERIES  ************************************/
+/**************************************************************************************/
+@media screen and (min-width: 1200px) {
+
+} /*1200px*/
+@media screen and (max-width: 1199px) {
+
+} /*1199px*/
+@media screen and (max-width: 991px) {
+
+} /*991px*/
+@media screen and (max-width: 767px) {
+  .bodyContent{
+    .sobreNosotros{
+      .mapaSituacion{ padding-bottom: 60%; }
+    }//.sobreNosotros
+  }//.bodyContent
+} /*767px*/

@@ -1,0 +1,78 @@
+
+.footerContent{
+  background: @salvar-bg-4;
+
+  .h5{ color: @salvar-bg-2; }
+
+  address{
+    color: @salvar-bg-1;
+    padding-left: 20px;
+
+    a{
+      color: @salvar-red;
+      font-weight: bold;
+      text-decoration: none;
+      &:hover{ color: @salvar-red-hover; }
+    }
+    i{ vertical-align: sub; }
+  }
+
+  .redesSociales{
+    padding-left: 20px;
+
+    .rs{
+      display: inline-block;
+      margin-right: 20px;
+
+      a{
+        position: relative;
+        display: block;
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        color: @salvar-bg-1;
+
+        i{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+             -moz-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+        }
+      }
+
+      &.facebook{
+        a{ background: #3b5998}
+      }
+      &.twitter{
+        a{ background: #55acee}
+      }
+      &.instagram{
+        a{
+          background: #bc2a8d; /* Navegadores que no soportan graduacion de colores*/
+          background: -webkit-radial-gradient(30% 80%, farthest-corner, #fccc63, #fbad50, #e95950, #cd486b, #e95950, #8a3ab9, #4c68d7); /* Para Safari-Chrome */
+          background: -moz-radial-gradient(30% 80%, farthest-corner, #fccc63, #fbad50, #e95950, #cd486b, #e95950, #8a3ab9, #4c68d7); /* Para Firefox */
+          background: -o-radial-gradient(30% 80%, farthest-corner, #fccc63, #fbad50, #e95950, #cd486b, #e95950, #8a3ab9, #4c68d7); /* Para Opera */
+          background: radial-gradient(farthest-corner at 30% 80%, #fccc63, #fbad50, #e95950, #cd486b, #e95950, #8a3ab9, #4c68d7); /* Sintaxis estandar */
+        }
+      }
+    }//.rs
+  }//.redesSociales
+}
+
+/**************************************************************************************/
+/**********************  RESPONSIVE MEDIA QUERIES  ************************************/
+/**************************************************************************************/
+@media screen and (min-width: 1200px) {
+
+} /*1200px*/
+@media screen and (max-width: 1199px) {
+
+} /*1199px*/
+@media screen and (max-width: 991px) {
+
+} /*991px*/
+@media screen and (max-width: 767px) {
+
+} /*767px*/
